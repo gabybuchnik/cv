@@ -1,0 +1,29 @@
+.worker {
+    background-image: url('../../../../assets/images/worker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position-x: 50%;
+}
+
+.welcome {
+    background: rgba(243, 243, 243, 0.527);
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.text-animation{
+    animation: moveRight 1.5s;
+    position: relative;
+}
+
+@keyframes moveRight {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 0px;
+    }
+}
