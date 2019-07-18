@@ -1,0 +1,18 @@
+footer{
+    background: #c5ded7;
+    height: 100px; 
+}
+.fotter-content{
+    height: 100px;
+}
+.btn{
+    border: 1px solid #ccc;
+    background: rgba(38, 132, 80, 0.31);
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgba(38, 132, 80, 0.404);
+}

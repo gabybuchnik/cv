@@ -2,3 +2,13 @@ app-header{
     background: #c5ded7;
     display: block; 
 }
+app-resume{
+    min-height: 59.1%;
+    margin-bottom: -100px;
+    display: block;
+}
+app-resume:after {
+    content: "";
+    display: block;
+    height:100px;
+  }
