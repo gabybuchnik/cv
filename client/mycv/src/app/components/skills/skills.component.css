@@ -1,0 +1,10 @@
+#skills-container{
+    min-height: 81.4%;
+}
+.content{
+    display: block;
+    height: 50%;
+}
+h5{
+    margin:0;
+}
