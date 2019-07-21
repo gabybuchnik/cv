@@ -38,8 +38,8 @@ export class SkillsComponent implements OnInit, AfterViewChecked, OnDestroy {
       this.bar2 = 95;
       this.bar3 = 85;
       this.bar4 = 85;
-      this.bar5 = 50;
-      this.bar6 = 40;
+      this.bar5 = 70;
+      this.bar6 = 70;
       this.bar7 = 80;
     }, 100)
   }
