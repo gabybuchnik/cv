@@ -10,9 +10,11 @@
 h5 {
     margin: 0;
 }
-
+.title{
+    width: 30%;
+}
 .bar-wrapper {
-    width: 90%;
+    width: 70%;
     height: 20px;
     background: #ccc;
 }
