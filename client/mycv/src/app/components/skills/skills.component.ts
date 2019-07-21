@@ -1,23 +1,27 @@
-import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, AfterViewChecked, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent implements OnInit, AfterViewChecked {
+export class SkillsComponent implements OnInit, AfterViewChecked, OnDestroy {
   bar1: number;
   bar2: number;
   bar3: number;
   bar4: number;
   bar5: number;
   bar6: number;
+  bar7: number;
+  intervalId: any;
   constructor() {
     this.bar1 = null;
     this.bar2 = null;
     this.bar3 = null;
     this.bar4 = null;
     this.bar5 = null;
+    this.bar6 = null;
+    this.bar7 = null;
   }
   ngOnInit() {
     this.bar1 = 0;
@@ -26,15 +30,20 @@ export class SkillsComponent implements OnInit, AfterViewChecked {
     this.bar4 = 0;
     this.bar5 = 0;
     this.bar6 = 0;
+    this.bar7 = 0;
   }
   ngAfterViewChecked() {
-    setTimeout(() => {
+    this.intervalId = setTimeout(() => {
       this.bar1 = 100;
       this.bar2 = 95;
       this.bar3 = 85;
       this.bar4 = 85;
       this.bar5 = 50;
       this.bar6 = 40;
+      this.bar7 = 80;
     }, 100)
+  }
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
   }
 }
