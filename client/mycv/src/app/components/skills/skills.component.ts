@@ -36,11 +36,11 @@ export class SkillsComponent implements OnInit, AfterViewChecked, OnDestroy {
     this.intervalId = setTimeout(() => {
       this.bar1 = 100;
       this.bar2 = 95;
-      this.bar3 = 85;
-      this.bar4 = 85;
-      this.bar5 = 70;
-      this.bar6 = 70;
-      this.bar7 = 80;
+      this.bar3 = 87;
+      this.bar4 = 87;
+      this.bar5 = 80;
+      this.bar6 = 80;
+      this.bar7 = 85;
     }, 100)
   }
   ngOnDestroy() {
